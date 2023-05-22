@@ -33,9 +33,3 @@ app.use(notFound);
 app.use(errorHandler);
 
 app.listen(port, () => console.log(`Server started on port ${port}`));
-
-// TODO POST /api/users - Register a user
-// TODO POST /api/users/auth - Authenticate a user and get token
-// TODO POST /api/users/logout - Logout user and clear cookie
-// TODO GET /api/users/profile - Get user profile
-// TODO PUT /api/users/profile - Update profile
