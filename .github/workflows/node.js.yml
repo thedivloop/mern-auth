@@ -20,8 +20,8 @@ jobs:
       - run: npm --prefix ./frontend install
       - run: npm --prefix ./frontend run build
       - run: touch .env
-      - run: echo NODE_ENV="$NODE_ENV" >> .env
-      - run: echo PORT="$PORT" >> .env
+      - run: echo NODE_ENV=${{ vars.NODE_ENV}} >> .env
+      - run: echo PORT=${{ vars.PORT}} >> .env
       - run: echo MONGO_URI=${{ secrets.MONGO_URI }} >> .env
       - run: echo JWT_SECRET=${{ secrets.JWT_SECRET }} >> .env
       - run: cat .env
