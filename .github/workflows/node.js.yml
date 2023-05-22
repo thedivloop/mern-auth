@@ -23,4 +23,4 @@ jobs:
       - run: pm2 stop mern-auth
       - run: pm2 start mern-auth
       - run: pm2 save
-      - run: sudo service nginx rest
+      - run: sudo service nginx restart
